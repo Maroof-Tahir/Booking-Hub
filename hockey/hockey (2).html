@@ -1,0 +1,413 @@
+
+<!-- saved from url=(0058)file:///C:/Users/Faraz%20Masood/Desktop/hockey/hockey.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Tickets</title>
+
+    <link rel="stylesheet" href="./Cricket Tickets_files/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="./Cricket Tickets_files/bootstrap.min.js.download" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <style>
+        .navbar{
+            display: flex;
+            flex-direction: row-reverse;
+        }
+        .navbar ul{
+            list-style-type: upper-roman;
+        }
+        .navbar li{
+            float: left;
+            margin-right: 50px;
+        }
+        body{
+            background-color: #c06816;
+        }
+        h1{
+            color: bisque;
+            text-shadow:2px 2px 4px black;
+        }
+        .header{
+            padding-bottom: 0;
+        }
+        .btn{
+            display: inline-block;
+            color: var(--sub-color);
+            text-align: center;
+            text-transform: capitalize;
+            transition: .2s linear;
+            margin-top: 1rem;
+        }
+
+
+        .home .box img{
+   border-radius: .5rem;
+   height: 60vh;
+   width: 100%;
+   object-fit: cover;
+}
+
+.home .box .flex{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 1.5rem;
+   flex-wrap: wrap;
+   margin-top: 1.5rem;
+}
+
+.home .box .flex h3{
+   font-size: 2.5rem;
+   color: var(--sub-color);
+   text-transform: capitalize;
+}
+
+.swiper-button-prev{
+   left: 0%;
+}
+
+.swiper-button-next{
+   right: 0;
+}
+
+.swiper-button-next,
+.swiper-button-prev{
+   padding: 3rem 2rem;
+   background-color: var(--white);
+   top: 40%;
+   opacity: .7;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after{
+   color: var(--main-color);
+   font-size: 2rem;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover{
+   opacity: 1;
+}
+.about .row{
+   display: flex;
+   flex-wrap: wrap;
+   gap: 1.5rem;
+   text-align: center;
+   align-items: center;
+}
+
+.about .row .image{
+   flex: 1 1 40rem;
+}
+
+.about .row .image img{
+   width: 40rem;
+   border-radius: .5rem;
+}
+
+.about .row .content{
+   flex:1 1 40rem;
+}
+
+.about .row .content h3{
+   font-size: 3rem;
+   color: var(--sub-color);
+   text-transform: capitalize;
+   margin-bottom: 1rem;
+}
+
+.about .row .content p{
+   line-height: 2;
+   padding: 1rem 0;
+   font-size: 1.7rem;
+   color: var(--sub-color);
+}
+
+.about .row.revers{
+   flex-flow: row-reverse;
+   margin: 3rem 0;
+   flex-wrap: wrap;
+}
+
+.reservation form{
+   border: var(--border);
+   padding: 2rem;
+}
+
+.reservation form .flex{
+   display: flex;
+   flex-wrap: wrap;
+   gap: 1.5rem;
+}
+
+.reservation form h3{
+   background-color: var(--sub-color);
+   color: var(--main-color);
+   font-size: 2.5rem;
+   margin-bottom: 2rem;
+   border-radius: .5rem;
+   padding: 1.2rem;
+   text-align: center;
+   text-transform: capitalize;
+}
+
+.reservation form .flex .box{
+   flex: 1 1 40rem;
+}
+
+.reservation form .flex .box p{
+   font-size: 1.8rem;
+   color: var(--sub-color);
+}
+
+.reservation form .flex .box .input{
+   padding: 1rem 0;
+   margin: 1rem 0;
+   border-bottom: var(--border);
+   background: var(--main-color);
+   color: var(--white);
+   font-size: 1.8rem;
+   width: 100%;
+}
+
+.reservation form .flex .box input[type="date"]::-webkit-calendar-picker-indicator{
+   filter: invert(1);
+}
+
+.footer .box-container{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+   gap: 1.5rem;
+   justify-content: center;
+   align-items: flex-start;
+   padding-bottom: 3rem;
+   background-color: rgb(250, 248, 248);
+}
+
+.footer .box-container .box a{
+   display: block;
+   font-size: 1.8rem;
+   color: var(--sub-color);
+   padding: 1rem 0;
+}
+
+.footer .box-container .box a:hover{
+   color: black
+}
+.box{
+    background-color: rgb(235, 230, 224);
+}
+
+.footer .box-container .box:first-child i{
+   margin-right: 1.7rem;
+}
+
+.footer .box-container .box:nth-child(2){
+   text-align: center;
+}
+
+.footer .box-container .box:last-child{
+   text-align:right;
+}
+
+.footer .box-container .box:last-child i{
+   margin-left: 1.7rem;
+}
+
+.footer .credit{
+   border-radius: .5rem;
+   padding: 2rem;
+   text-align: center;
+   color: white;
+   background-color: white;
+   font-size: 2rem;
+   /* margin-bottom: 8rem; */
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>PAKISTAN HOCKEY</h1>
+        <button class="btn btn-primary"> AVAILABILITY</button>
+    </div>
+
+    <div class="navbar">
+        <ul>
+            <li><a href="file:///C:/Users/Faraz%20Masood/Desktop/hockey/hockey.html#Home">Home</a></li>
+            <li><a href="file:///C:/Users/Faraz%20Masood/Desktop/hockey/hockey.html#contact">Contact</a></li>
+            <li><a href="file:///C:/Users/Faraz%20Masood/Desktop/hockey/hockey.html#about">About</a></li>
+            <li><a href="file:///C:/Users/Faraz%20Masood/Desktop/hockey/hockey.html#Hockey%20Sticks">Hockey Sticks</a></li>
+            <li><a href="file:///C:/Users/Faraz%20Masood/Desktop/hockey/hockey.html#booking">Booking</a></li>
+          </ul> 
+    </div>
+    <section class="home" id="home">
+    <div class="swiper-wrapper">
+
+        <div class="box swiper-slide">
+           <img src="./Cricket Tickets_files/h.webp" alt="" width="700px" height="700px">
+           <div class="flex">
+              <h3>Legend</h3>
+             
+           </div>
+        </div>
+
+        <div class="box swiper-slide">
+           <img src="./Cricket Tickets_files/leg.png" alt="legend" width="700px" height="700px">
+           <div class="flex">
+            <h3>LEGENDS</h3>
+           </div>
+        </div>
+
+        <div class="box swiper-slide">
+           <img src="./Cricket Tickets_files/leg2.jpg" alt="2 legends">
+           <div class="flex">
+            <h3>Australian Team</h3>
+           </div>
+        </div>
+
+        <div class="box swiper-slide">
+            <img src="./Cricket Tickets_files/a.jpg" alt="Aus Team">
+            <div class="flex">
+             <h3>English Team</h3>
+            </div>
+         </div>
+
+         <div class="box swiper-slide">
+            <img src="./Cricket Tickets_files/E.jpg" alt="England Team">
+            <div class="flex">
+
+            </div>
+         </div>
+
+     </div>
+     <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </section>
+
+    <section class="about" id="about">
+
+        <div class="row">
+           <div class="image">
+              <img src="./Cricket Tickets_files/ho.jpg" alt="clean stumps">
+           </div>
+           <div class="content">
+              <h3>Sticks</h3>
+              <p>We have stick of best hockey companies</p>
+              <a href="file:///C:/Users/Faraz%20Masood/Desktop/hockey/hockey.html#reservation" class="btn">make a reservation</a>
+           </div>
+        </div>
+     
+        <div class="row revers">
+           <div class="image">
+              <img src="./Cricket Tickets_files/g.jpeg" alt="">
+           </div>
+           <div class="content">
+              <h3>best Grounds</h3>
+              <p>Best grounds For best players</p>
+              <a href="file:///C:/Users/Faraz%20Masood/Desktop/hockey/hockey.html#contact" class="btn">CONTACT</a>
+           </div>
+        </div>
+     
+        <div class="row">
+           <div class="image">
+              <img src="./Cricket Tickets_files/r.jpg" alt="">
+           </div>
+           <div class="content">
+              <h3>Referees</h3>
+              <p>We got best referees  </p>
+              <a href="file:///C:/Users/Faraz%20Masood/Desktop/hockey/hockey.html#availability" class="btn">check availability</a>
+           </div>
+        </div>
+     
+     </section>
+
+     <section class="reservation" id="reservation">
+
+        <form action="file:///C:/Users/Faraz%20Masood/Desktop/hockey/hockey.html" method="post">
+           <h3>make a reservation</h3>
+           <div class="flex">
+              <div class="box">
+                 <p>Arrival Date <span>*</span></p>
+                 <input type="date" name="check_in" class="input" required="">
+              </div>
+              <div class="box">
+                 <p>End date <span>*</span></p>
+                 <input type="date" name="check_out" class="input" required="">
+              </div>
+              <div class="box">
+                 <p>adults <span>*</span></p>
+                 <select name="adults" class="input" required="">
+                    <option value="1">1 adult</option>
+                    <option value="2">2 adults</option>
+                    <option value="3">3 adults</option>
+                    <option value="4">4 adults</option>
+                    <option value="5">5 adults</option>
+                    <option value="6">6 adults</option>
+                 </select>
+              </div>
+              <div class="box">
+                 <p>childs <span>*</span></p>
+                 <select name="childs" class="input" required="">
+                    <option value="-">0 child</option>
+                    <option value="1">1 child</option>
+                    <option value="2">2 childs</option>
+                    <option value="3">3 childs</option>
+                    <option value="4">4 childs</option>
+                    <option value="5">5 childs</option>
+                    <option value="6">6 childs</option>
+                 </select>
+              </div>
+              <div class="box">
+                 <p>tickets <span>*</span></p>
+                 <select name="rooms" class="input" required="">
+                    <option value="1">1 ticket</option>
+                    <option value="2">2 ticket</option>
+                    <option value="3">3 tickets</option>
+                    <option value="4">4 ticket</option>
+                    <option value="5">5 ticket</option>
+                    <option value="6">6 ticket</option>
+                 </select>
+              </div>
+           </div>
+           <input type="submit" value="check availability" name="check" class="btn">
+        </form>
+     
+     </section>
+     <section class="footer">
+
+        <div class="box-container">
+     
+           <div class="box">
+              <a href="tel:1234567890"><i class="fas fa-phone"></i> 0323-456-7890</a>
+              <a href="tel:1112223333"><i class="fas fa-phone"></i> 0311-222-3333</a>
+              <a href="mailto:shakhanas@gmail.com"><i class="fas fa-envelope"></i> hotel@gmail.com</a>
+              <a href="file:///C:/Users/Faraz%20Masood/Desktop/hockey/hockey.html#"><i class="fas fa-map-marker-alt"></i> Lahore Punjab - 54000</a>
+           </div>
+     
+           <div class="box">
+              <a href="file:///C:/Users/Faraz%20Masood/Desktop/hockey/hockey.html#home">home</a>
+              <a href="file:///C:/Users/Faraz%20Masood/Desktop/hockey/hockey.html#about">about</a>
+              <a href="file:///C:/Users/Faraz%20Masood/Desktop/hockey/hockey.html#reservation">reservation</a>
+              <a href="file:///C:/Users/Faraz%20Masood/Desktop/hockey/hockey.html#gallery">gallery</a>
+              <a href="file:///C:/Users/Faraz%20Masood/Desktop/hockey/hockey.html#contact">contact</a>
+              <a href="file:///C:/Users/Faraz%20Masood/Desktop/hockey/hockey.html#reviews">reviews</a>
+           </div>
+     
+           <div class="box">
+              <a href="file:///C:/Users/Faraz%20Masood/Desktop/hockey/hockey.html#">facebook <i class="fab fa-facebook-f"></i></a>
+              <a href="file:///C:/Users/Faraz%20Masood/Desktop/hockey/hockey.html#">twitter <i class="fab fa-twitter"></i></a>
+              <a href="file:///C:/Users/Faraz%20Masood/Desktop/hockey/hockey.html#">instagram <i class="fab fa-instagram"></i></a>
+              <a href="file:///C:/Users/Faraz%20Masood/Desktop/hockey/hockey.html#">linkedin <i class="fab fa-linkedin"></i></a>
+           </div>
+     
+        </div>
+     
+        
+     
+     </section>
+
+
+
+</body></html>
