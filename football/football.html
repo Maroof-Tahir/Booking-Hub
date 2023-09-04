@@ -1,0 +1,359 @@
+<html>
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> football ticket </title>
+     
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+     
+        <!-- font awesome cdn link  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+     
+        <!-- custom css file link  -->
+        <link rel="stylesheet" href="css/style.css">
+        <style>
+            body
+            {
+                
+              font-family: Arial, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+              margin: 0;
+            }
+            .navbar 
+            {
+              overflow: hidden;
+              background-color: rgb(6, 75, 6); 
+              border-radius: 1px;
+              width: 100%;
+            }
+            .navbar a 
+            {
+              float: left;
+              font-size: 12px;
+              color:rgb(168, 192, 176);
+              text-align: left;
+              margin: 30px;
+              padding: 30px 20px;
+              text-decoration: none;
+            }
+            .subnav 
+            {
+              float: left;
+              overflow: auto;
+              border-radius: 1.5px;
+              color:grey;
+            }
+             .subnavbtn 
+             {
+              font-size: 16px;  
+              border: none;
+              outline: none;
+              color: lightgray;
+              padding: 15px 18px;
+              margin: 8px;
+              background-color: inherit;
+              border-radius: 15px;
+              font-family: inherit;
+            }
+            .navbar a:hover 
+            {
+              background-color: #7ccc24;
+              border-radius: 15px;
+              color: grey;
+            }
+            .subnav:hover .subnavbtn 
+            {
+              background-color: #7ccc24;
+              color: gray;
+            }
+            .subnav-content 
+            {
+              display: none;
+              position:fixed;
+              background-color: #446820;
+              border-radius: 15px;
+              width: 250px;
+            }
+            .subnav-content a 
+            {
+              list-style-type: none;
+              color: lightgrey;
+              text-decoration: none;
+              border-radius: 1px;
+              padding: 7px;
+              text-align: right;
+              width: 85%;
+            }
+            .subnav-content a:hover 
+            {
+              background-color: #7ccc24;
+              color: gray;
+              border-radius: 1px;
+              width: 85%;
+            }
+            .subnav:hover .subnav-content 
+            {
+              display: block;
+              border-radius: 15px;
+            }
+            .main.bg{
+
+                background-color: rgb(33, 67, 112);
+            }
+            
+            .main.bg.limage{
+                height:70px;
+                width: 100px
+            }
+            .header1{
+
+                padding-bottom: 0;
+            }
+            .h2{
+color: yellow;
+text-shadow: 2px 2px 4px black;
+
+            }
+            .btn{
+                display: inline-block;
+                color: var(#446820);
+                text-align:center ;
+                text-transform: capitalize;
+                transition: .2s linear;
+                margin-top: 1rem;
+            }
+            .footer .box-container{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+   gap: 1.5rem;
+   justify-content: center;
+   align-items: flex-start;
+   padding-bottom: 3rem;
+}
+
+.footer .box-container .box a{
+   display: block;
+   font-size: 1.8rem;
+   color: var(--sub-color);
+   padding: 1rem 0;
+}
+
+.footer .box-container .box a:hover{
+   color: var(--white);
+}
+
+.footer .box-container .box:first-child i{
+   margin-right: 1.7rem;
+}
+
+.footer .box-container .box:nth-child(2){
+   text-align: center;
+}
+
+.footer .box-container .box:last-child{
+   text-align:right;
+}
+
+.footer .box-container .box:last-child i{
+   margin-left: 1.7rem;
+}
+
+.footer .credit{
+   border-radius: .5rem;
+   padding: 2rem;
+   text-align: center;
+   color: var(--main-color);
+   background-color: var(--sub-color);
+   font-size: 2rem;
+   /* margin-bottom: 8rem; */
+}
+
+
+            .reservation form{
+   border: var(--border);
+   padding: 2rem;
+}
+
+.reservation form .flex{
+   display: flex;
+   flex-wrap: wrap;
+   gap: 1.5rem;
+}
+
+.reservation form h3{
+   background-color: var(--sub-color);
+   color: var(--main-color);
+   font-size: 2.5rem;
+   margin-bottom: 2rem;
+   border-radius: .5rem;
+   padding: 1.2rem;
+   text-align: center;
+   text-transform: capitalize;
+}
+
+.reservation form .flex .box{
+   flex: 1 1 40rem;
+}
+
+.reservation form .flex .box p{
+   font-size: 1.8rem;
+   color:white;
+}
+
+.reservation form .flex .box .input{
+   padding: 1rem 0;
+   margin: 1rem 0;
+   border-bottom: var(--border);
+   background: gray;
+   color: var(--white);
+   font-size: 1.8rem;
+   width: 100%;
+}
+
+.reservation form .flex .box input[type="date"]::-webkit-calendar-picker-indicator{
+   filter: invert(1);
+}
+
+
+            </style>
+            
+     </head>
+     <body>
+   
+        <!-- header section starts  -->
+        
+        <section class="header">
+        
+           
+        
+           <nav class="navbar">
+              <a href="#home">home</a>
+              <a href="#about">about</a>
+              <a href="#reservation">reservation</a>
+              <a href="#contact">contact</a>
+              
+          
+           </nav>
+        
+        </section>
+        
+        
+         
+
+
+
+        </div>
+        <section class="main" >
+        
+        <div class = 'bg'>
+            <div class = "header1">
+                <h2 style = "background-color: darkolivegreen;">Football Kicks</h2>
+            
+
+<div class = "limage">
+
+    <img src="/football/images/1.jpeg" alt="picture" width = "1300px" height = "500px">
+
+</div>
+
+<div class = "limage">
+    <h1 style="background-color:rgb(218, 30, 255);">Best Football Team</h1>
+    <img src="/football/images/real.jpg" alt="picture" width = "1300px" height = "500px">
+
+</div>
+</section>
+
+<section class="reservation" id="reservation">
+
+    <form action="" method="post">
+       <h3>Book a Ticket</h3>
+       <div class="flex">
+          <div class="box">
+             <p>Starting Date <span>*</span></p>
+             <input type="date" name="check_in" class="input" required>
+          </div>
+          <div class="box">
+             <p>Ending Date <span>*</span></p>
+             <input type="date" name="check_out" class="input" required>
+          </div>
+          <div class="box">
+             <p>adults <span>*</span></p>
+             <select name="adults" class="input" required>
+                <option value="1">1 adult</option>
+                <option value="2">2 adults</option>
+                <option value="3">3 adults</option>
+                <option value="4">4 adults</option>
+                <option value="5">5 adults</option>
+                <option value="6">6 adults</option>
+             </select>
+          </div>
+          <div class="box">
+             <p>childs <span>*</span></p>
+             <select name="childs" class="input" required>
+                <option value="-">0 child</option>
+                <option value="1">1 child</option>
+                <option value="2">2 childs</option>
+                <option value="3">3 childs</option>
+                <option value="4">4 childs</option>
+                <option value="5">5 childs</option>
+                <option value="6">6 childs</option>
+             </select>
+          </div>
+          <div class="box">
+             <p>Area <span>*</span></p>
+             <select name="rooms" class="input" required>
+                <option value="1">Area1</option>
+                <option value="2">Area2</option>
+                <option value="3">Area3</option>
+                <option value="4">Area4</option>
+                <option value="5">Area5</option>
+                <option value="6">Area6</option>
+             </select>
+          </div>
+       </div>
+       <input type="submit" value="check availability" name="check" class="btn">
+    </form>
+ 
+ </section>
+ <section class="footer">
+
+    <div class="box-container">
+ 
+       <div class="box">
+          <a href="tel:1234567890"><i class="fas fa-phone"></i> 0323-456-7890</a>
+          <a href="tel:1112223333"><i class="fas fa-phone"></i> 0311-222-3333</a>
+          <a href="mailto:shakhanas@gmail.com"><i class="fas fa-envelope"></i> hotel@gmail.com</a>
+          <a href="#"><i class="fas fa-map-marker-alt"></i> Lahore Punjab - 54000</a>
+       </div>
+ 
+       <div class="box">
+          <a href="#home">home</a>
+          <a href="#about">about</a>
+          <a href="#reservation">reservation</a>
+          <a href="#gallery">gallery</a>
+          <a href="#contact">contact</a>
+          <a href="#reviews">reviews</a>
+       </div>
+ 
+       <div class="box">
+          <a href="#">facebook <i class="fab fa-facebook-f"></i></a>
+          <a href="#">twitter <i class="fab fa-twitter"></i></a>
+          <a href="#">instagram <i class="fab fa-instagram"></i></a>
+          <a href="#">linkedin <i class="fab fa-linkedin"></i></a>
+       </div>
+ 
+    </div>
+ 
+    
+ 
+ </section>
+ 
+ 
+       
+                
+       </div>
+        </body>
+</head>
+
+
